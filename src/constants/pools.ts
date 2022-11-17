@@ -74,7 +74,7 @@ export type Pools = {
 
 const POOLS_GOERLI: Pools = {
   IdsMap: {
-    staBAL: '',
+    staBAL: '0xd8f6713dfd21bfd4362979ac9c3b14950594375f000200000000000000000000',
     bbAaveUSD: {
       v1: '',
       v2: '',
@@ -96,10 +96,12 @@ const POOLS_GOERLI: Pools = {
   ],
   ExcludedPoolTypes: ['Element', 'AaveLinear', 'Linear', 'ERC4626Linear', 'FX'],
   Stable: {
-    AllowList: [],
+    AllowList: [
+	'0xd8f6713dfd21bfd4362979ac9c3b14950594375f000200000000000000000000'],
   },
   Investment: {
-    AllowList: [],
+    AllowList: [
+	'0xd8f6713dfd21bfd4362979ac9c3b14950594375f000200000000000000000000'],
   },
   Factories: {
     '0xab5D2bec9e159879267546A419eE208bD36E35cC': 'oracleWeightedPool',
@@ -113,7 +115,9 @@ const POOLS_GOERLI: Pools = {
     '0x94f68b54191f62f781fe8298a8a5fa3ed772d227': 'weightedPool', // weighted pool v2
   },
   Stakable: {
-    AllowList: [],
+    AllowList: [
+	'0xd8f6713dfd21bfd4362979ac9c3b14950594375f000200000000000000000000'
+	],
   },
   Metadata: {
     '0x13acd41c585d7ebb4a9460f7c8f50be60dc080cd00000000000000000000005f': {
